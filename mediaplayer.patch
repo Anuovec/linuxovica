@@ -130,4 +130,4 @@ index 0000000..2bc9a0c
 @@ -0,0 +1,3 @@
 +#!/bin/busybox ash
 +mount /dev/${MDEV} /media
-+find -print0 /media/*.mp3 | xargs -0 mpg123
++find /media -name "*.mp3" -print0 | xargs -0 mpg123
